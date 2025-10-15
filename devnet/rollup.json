@@ -33,7 +33,7 @@
   "holocene_time": 0,
   "isthmus_time": 0,
   "batch_inbox_address": "0x0039da2db355130acf428d669fbf1c14faa9d513",
-  "deposit_contract_address": "0x2c36a60722f74974f38f40e550c1c346a4966463",
+  "deposit_contract_address": "0x45dA080Cb94c35Ec130836c843E432deab290875",
   "l1_system_config_address": "0xbfc22ca35ca13e693ab099a325f286b221cbbfc3",
   "protocol_versions_address": "0xe525ee7e1432d1e3acb0fe601322f1dbad56365a",
   "chain_op_config": {
