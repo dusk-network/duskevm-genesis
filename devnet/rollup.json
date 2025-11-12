@@ -1,14 +1,14 @@
 {
   "genesis": {
     "l1": {
-      "hash": "0x309ef93df61c22fe8fdb995f81eafc8071f4472c35479047324044ac145fe643",
-      "number": 652980
+      "hash": "0x72ae2354ea7e215791740e12eb0a17b7609d7cb213abeeb202098563341ed351",
+      "number": 17250
     },
     "l2": {
       "hash": "0x3f73f5e9bfa9c557d63bc16ef4d99fec1cefd9947728c367fbbe7827e6c30e48",
       "number": 0
     },
-    "l2_time": 1760946900,
+    "l2_time": 1762949437,
     "system_config": {
       "batcherAddr": "0xe72444b0e9d159ebf6c351674b98c34bc290481d",
       "overhead": "0x0000000000000000000000000000000000000000000000000000000000000000",
