@@ -1,14 +1,14 @@
 {
   "genesis": {
     "l1": {
-      "hash": "TBD",
-      "number": TBD
+      "hash": "0x7f919d575f2dcc12b6d8281c73bdb8f7ba61f97be600fe1a91f14b4b62e1ca93",
+      "number": 1979832
     },
     "l2": {
-      "hash": "TBD",
+      "hash": "0xbdca67c9e32039e59075047209c76c0a131bb69ddc1700a1be6acbd17d627295",
       "number": 0
     },
-    "l2_time": TBD,
+    "l2_time": 1764595468,
     "system_config": {
       "batcherAddr": "0xe72444b0e9d159ebf6c351674b98c34bc290481d",
       "overhead": "0x0000000000000000000000000000000000000000000000000000000000000000",
