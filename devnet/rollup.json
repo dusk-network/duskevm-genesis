@@ -1,21 +1,23 @@
 {
   "genesis": {
     "l1": {
-      "hash": "0xb840a615c204aa0006853f1022253ec69ec0d7efb31a4ee7ac78faa171288861",
-      "number": 199489
+      "hash": "0x5ff44029697ba438e6165a3c7888215b216ea1bb01c49445dd2b7a3389b08c48",
+      "number": 303210
     },
     "l2": {
-      "hash": "0x854712f26586a7b52fc667850306981471e69eed888f60b5982ee9d8b9fd0a82",
+      "hash": "0x63a58b55fe34041ae1a14ac448a556307fc7b3966b23428f0e216a8b4e3c302f",
       "number": 0
     },
-    "l2_time": 1764771830,
+    "l2_time": 1765809124,
     "system_config": {
-      "batcherAddr": "0xe72444b0e9d159ebf6c351674b98c34bc290481d",
+      "batcherAddr": "0x9fa944895f4a8a3e5c5044381e64ad946ef5f739",
       "overhead": "0x0000000000000000000000000000000000000000000000000000000000000000",
-      "scalar": "0x010000000000000000000000000000000000000000000000000c5fc500000558",
+      "scalar": "0x010000000000000000000000000000000000000000000000000c3c9d00000558",
       "gasLimit": 60000000,
       "eip1559Params": "0x0000000000000000",
-      "operatorFeeParams": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      "operatorFeeParams": "0x00000000000000000000000000000000000000000db812d7000110d9316ec000",
+      "minBaseFee": 0,
+      "daFootprintGasScalar": 0
     }
   },
   "block_time": 2,
@@ -32,13 +34,15 @@
   "granite_time": 0,
   "holocene_time": 0,
   "isthmus_time": 0,
+  "jovian_time": 0,
   "batch_inbox_address": "0x0039da2db355130acf428d669fbf1c14faa9d513",
-  "deposit_contract_address": "0x99C9fc46f92E8a1c0deC1b1747d010903E884bE1",
-  "l1_system_config_address": "0xbfc22ca35ca13e693ab099a325f286b221cbbfc3",
-  "protocol_versions_address": "0xe525ee7e1432d1e3acb0fe601322f1dbad56365a",
+  "deposit_contract_address": "0xeb0177838dc19fc371a577e31957b52ec91d7558",
+  "l1_system_config_address": "0x41f895c7bdd185f41ee72d9c53117ad4b2e9dd1b",
+  "protocol_versions_address": "0xe77dc0a87bc5af0cdbdb1ea5801b39aa0dbf0c8f",
   "chain_op_config": {
     "eip1559Elasticity": 6,
     "eip1559Denominator": 50,
     "eip1559DenominatorCanyon": 250
   }
 }
+
