@@ -36,7 +36,7 @@
   "isthmus_time": 0,
   "jovian_time": 0,
   "batch_inbox_address": "0x0039da2db355130acf428d669fbf1c14faa9d513",
-  "deposit_contract_address": "0xeb0177838dc19fc371a577e31957b52ec91d7558",
+  "deposit_contract_address": "0xbd9e5644d9b0a575188f3c8be226f465f60b616a",
   "l1_system_config_address": "0x41f895c7bdd185f41ee72d9c53117ad4b2e9dd1b",
   "protocol_versions_address": "0xe77dc0a87bc5af0cdbdb1ea5801b39aa0dbf0c8f",
   "chain_op_config": {
