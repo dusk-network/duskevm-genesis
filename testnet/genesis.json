@@ -26,6 +26,7 @@
     "graniteTime": 0,
     "holoceneTime": 0,
     "isthmusTime": 0,
+    "jovianTime": 0,
     "terminalTotalDifficulty": 0,
     "depositContractAddress": "0x0000000000000000000000000000000000000000",
     "optimism": {
