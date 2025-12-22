@@ -12,10 +12,12 @@
     "system_config": {
       "batcherAddr": "0xe72444b0e9d159ebf6c351674b98c34bc290481d",
       "overhead": "0x0000000000000000000000000000000000000000000000000000000000000000",
-      "scalar": "0x010000000000000000000000000000000000000000000000000c5fc500000558",
+      "scalar": "0x010000000000000000000000000000000000000000000000000c3c9d00000558",
       "gasLimit": 60000000,
       "eip1559Params": "0x0000000000000000",
-      "operatorFeeParams": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      "operatorFeeParams": "0x00000000000000000000000000000000000000004f30642500071afd498d0000",
+      "minBaseFee": 10000000000,
+      "daFootprintGasScalar": 0
     }
   },
   "block_time": 2,
@@ -32,6 +34,7 @@
   "granite_time": 0,
   "holocene_time": 0,
   "isthmus_time": 0,
+  "jovian_time": 0,
   "batch_inbox_address": "0x0039da2db355130acf428d669fbf1c14faa9d513",
   "deposit_contract_address": "0x99C9fc46f92E8a1c0deC1b1747d010903E884bE1",
   "l1_system_config_address": "0xbfc22ca35ca13e693ab099a325f286b221cbbfc3",
