@@ -1,14 +1,14 @@
 {
   "genesis": {
     "l1": {
-      "hash": "0xd74f83b98fb0b59bcaf5355329e35708a1374f8f54c6c8e5939e7903d7029d3c",
-      "number": 50
+      "hash": "0x0e00d0a1b8a1e60755d4078b6571ff7714a68ef1dd789913722bc10e39eb6acf",
+      "number": 560965
     },
     "l2": {
-      "hash": "0x5580724215a1bcecd9ba8e66556f05c9b255276de3aef8d054ae767f6a659e8a",
+      "hash": "0x9d9b95b4e77d60e0e3dabd9a9ecd72ab37ac6bd35cd048398a971d20d1301772",
       "number": 0
     },
-    "l2_time": 1768307454,
+    "l2_time": 1768386665,
     "system_config": {
       "batcherAddr": "0xbe888048561703bf28a6db84a8e37be728160b50",
       "overhead": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -24,7 +24,7 @@
   "max_sequencer_drift": 600,
   "seq_window_size": 3600,
   "channel_timeout": 300,
-  "l1_chain_id": 1,
+  "l1_chain_id": 3,
   "l2_chain_id": 744,
   "regolith_time": 0,
   "canyon_time": 0,
