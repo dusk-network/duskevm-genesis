@@ -1,0 +1,134 @@
+{
+  "contracts": {
+    "anchor_state_registry": {
+      "contract_id": "1735498c11978854e390894502850916f4ba619e3f4b88c10ef758c5026619cc",
+      "evm_address": "0xc5f459729235774aa47bed7db3bffcfa8e4b3ce2",
+      "wasm": "anchor_state_registry.wasm"
+    },
+    "delayed_weth": {
+      "contract_id": "be5771a80c378903801c768de0ea70eaef26cf9a0b46931ae725bfdc5c7b01cc",
+      "evm_address": "0x40a4904ae2fc89a59ccbd69493b0998a01e8c75b",
+      "wasm": "delayed_weth.wasm"
+    },
+    "dispute_game_factory": {
+      "contract_id": "3b7d562aa0e6b94ce29c5ce2a6f0587ad771afdace86abb0baf66f93e49548cd",
+      "evm_address": "0x652a152f4043c8d60eadab1c6d075c704363d3c9",
+      "wasm": "dispute_game_factory.wasm"
+    },
+    "evm_tx_router": {
+      "contract_id": "2e4b8b46390c860282b765641fa94037812601bf777164d7b7f801a262206046",
+      "evm_address": "0xfd95a68111db8c0ac15bc428b377d57813eb7ba8",
+      "wasm": "evm_tx_router.wasm"
+    },
+    "fault_dispute_game_hub": {
+      "contract_id": "d5ece3d6cfab787d732ff02897254fc211e2d2ef476cb8883b9cd83d979aedae",
+      "evm_address": "0xee28e9bb608dbe76f4643df239dcff5a9580aab3",
+      "wasm": "fault_dispute_game_hub.wasm"
+    },
+    "l1_cross_domain_messenger": {
+      "contract_id": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+      "evm_address": "0x8b6aa15321d9656c91ad2d5fbc2ae8b750ad6f9a",
+      "wasm": "l1_cross_domain_messenger.wasm"
+    },
+    "l1_erc721_bridge": {
+      "contract_id": "259f7352efa9e5d41dd7f93b00814e7e8dd1c657e57c0a883f095824696f44fa",
+      "evm_address": "0x99df5dffe75b8366e80e77e4a2ef9ca75fe5a15a",
+      "wasm": "l1_erc721_bridge.wasm"
+    },
+    "l1_standard_bridge": {
+      "contract_id": "2257e5f8ff49cf7c9704a14ca35acbf48eb7ade11a079d98d5cd5655eea1b31d",
+      "evm_address": "0x2d2e08c0e8d64381db56bf2c942bc825602e61c3",
+      "wasm": "l1_standard_bridge.wasm"
+    },
+    "mips": {
+      "contract_id": "76d50c0cdcc19b7ad143e20f0a98a1ecd802e9b61ff73bff63a145a9229d9f8b",
+      "evm_address": "0x8eaf324c0b3177aae6cdf0ff0095bed8442dbf2b",
+      "wasm": "mips.wasm"
+    },
+    "optimism_mintable_erc20_factory": {
+      "contract_id": "8c5cd72c0dbdad30c4f43be41c73bce1a41df17a4a06c78c9086df9cf53c1e35",
+      "evm_address": "0x64381e85a2dac086a58231625353035e8549055d",
+      "wasm": "optimism_mintable_erc20_factory.wasm"
+    },
+    "optimism_mintable_erc721_factory": {
+      "contract_id": "920958dd200a057a538035fed3d8a7e140efc1a91c6090d82f6178cdef9590a6",
+      "evm_address": "0x4de2b8689060297bb6af70249e6d883420c67741",
+      "wasm": "optimism_mintable_erc721_factory.wasm"
+    },
+    "optimism_portal": {
+      "contract_id": "14eeb3d4021aff09af2c515603a01f8d956a7f6411d11a1b1c0b0561a93fb1b9",
+      "evm_address": "0x19e05e040e2b35dd705ef031759c1697727cf6de",
+      "wasm": "optimism_portal.wasm"
+    },
+    "permissioned_dispute_game_hub": {
+      "contract_id": "c82a080d763b331f40453ab08df2cab73faf3dee3849cd21a3508056dd9b38e0",
+      "evm_address": "0x2d5559f90a01806e045c5fc77377247f52d3f56b",
+      "wasm": "permissioned_dispute_game_hub.wasm"
+    },
+    "preimage_oracle": {
+      "contract_id": "99b250afab5f2c077b2f1e5fda25abca7e2caa7219bde9e4a01d3a554da35526",
+      "evm_address": "0xb3c6c69cf2a946da0a7654fc0c1fee4425f3d97f",
+      "wasm": "preimage_oracle.wasm"
+    },
+    "protocol_versions": {
+      "contract_id": "234e593c3e00d07c27108d00f441a6c1d33747c1cb05c2f5ddf0861d91d63df4",
+      "evm_address": "0x055e50336539de68e04b7043a1c249d9c159f098",
+      "wasm": "protocol_versions.wasm"
+    },
+    "proxy_admin": {
+      "contract_id": "18a06b050de2756582d4c0256fe7bf0f5f6da6ba7a1c72b6d3377bb98e0ad0b4",
+      "evm_address": "0x3ef32223dad96e4ca3e99e9dff4eaa52e235226e",
+      "wasm": "proxy_admin.wasm"
+    },
+    "superchain_config": {
+      "contract_id": "a6b1622f94b35a834929175b6335c1d4ff04be5fc03647fd61f96d1ccff7424d",
+      "evm_address": "0x3bce6a94a4322022bbb31666e7fccca77e2b8a79",
+      "wasm": "superchain_config.wasm"
+    },
+    "system_config": {
+      "contract_id": "6ca481270c1386fb93d08e0181cc8af8052f8ee17677c22134a7e6f553238ace",
+      "evm_address": "0x539becbf5d6fff4a991602d8bc8c1820b5981b0d",
+      "wasm": "transparent_proxy.wasm"
+    },
+    "system_config_impl": {
+      "contract_id": "8937cc04b35914326cf034804075f3818e54d400c466b12ccdee3ecd25b4689a",
+      "evm_address": "0x1656fcb2f0ebc15995b392a28332dfba69593390",
+      "wasm": "system_config_impl.wasm"
+    },
+    "system_config_legacy": {
+      "contract_id": "9cf7ff2f80e3e556fba4e7da04d694f47bbd77222525d71f6938230fb2d04648",
+      "evm_address": "0x539becbf5d6fff4a991602d8bc8c1820b5981b0d",
+      "wasm": "system_config.wasm"
+    },
+    "transparent_proxy": {
+      "contract_id": "6ca481270c1386fb93d08e0181cc8af8052f8ee17677c22134a7e6f553238ace",
+      "evm_address": "0xdc05b5507fb495b6729854bdcdffbcae110ef98b",
+      "wasm": "transparent_proxy.wasm"
+    },
+    "tx_meta_registry": {
+      "contract_id": "179f68303f0eb935660d52a52c2f104709d8b3b1d6f6525689d4d599695840c9",
+      "evm_address": "0xfd33dd54cd97cd2037d868ba8db31836c51311db",
+      "wasm": "tx_meta_registry.wasm"
+    }
+  },
+  "metadata": {
+    "absolute_prestate": "0x0323bc27b4764a4c1d292b5949c6d860763454fecec31b8155f15872ae918b28",
+    "proxy_forwarded_event_schemas": [
+      {
+        "forwarded_event_schema_artifact": "system_config.wasm",
+        "forwarded_event_topics": [
+          "config_update"
+        ],
+        "implementation_artifact": "system_config_impl.wasm",
+        "implementation_contract_id": "8937cc04b35914326cf034804075f3818e54d400c466b12ccdee3ecd25b4689a",
+        "implementation_contract_key": "system_config_impl",
+        "implementation_version": 1,
+        "proxy_contract_id": "6ca481270c1386fb93d08e0181cc8af8052f8ee17677c22134a7e6f553238ace",
+        "proxy_contract_key": "system_config",
+        "proxy_event_schema_artifact": "transparent_proxy.wasm"
+      }
+    ],
+    "system_config_start_block": 3906955
+  },
+  "wallet_payer": "nBzHu5NrZ14iBJQZtfRgaEMR5Jxrc1v6fGwHb7rFNwuJRijuzWhY1Bk8aS3V2KKWvfg4U9tu8mdr5yPN9FfCnzfy2syMZ2Cv6S3qUPmPyRTdjUXpSshHAFoaN1EGTwZ2LdY"
+}
