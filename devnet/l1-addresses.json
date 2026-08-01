@@ -1,113 +1,113 @@
 {
   "contracts": {
     "anchor_state_registry": {
-      "contract_id": "c182f8d41ba060ad224d42810b35f495f2fe56297b782f89a07b780415644e07",
-      "evm_address": "0xb6f3f49fe31c4ed4e3ec69984c4250567c1e54ed",
+      "contract_id": "792ea43e3a58bab24e50b442bafe6640482bb2177ffeb9c4779a77db2072869b",
+      "evm_address": "0x80be58a667ef538ee03c57378ae6a2bbb7abb2f8",
       "wasm": "anchor_state_registry.wasm"
     },
     "delayed_weth": {
-      "contract_id": "21b502fc4c94b17c6e2ef8ce3a412960124394d8600742b48aa37dbd832f9f3d",
-      "evm_address": "0xd95c00c9a7bf5d413e80c8eee7c185213a5ccb36",
+      "contract_id": "953764b4b40b7451c0b797dca4a83068477474235489344fe17eb7376b90f5c8",
+      "evm_address": "0xcde1b22fbc65c36ecd159ec41f3e43d44e35b8ef",
       "wasm": "delayed_weth.wasm"
     },
     "dispute_game_factory": {
-      "contract_id": "d9c17c4d814815ba0b4a034fa0a0ca1cbbbf02998a6d8442b129d5a83a7e7b7a",
-      "evm_address": "0x59323980c74e7a569f606601f86f945ae3ab16a6",
+      "contract_id": "1da5630a16cda0a56c87d38fa71775aaef2e5596747e862af597622de5d0fc1c",
+      "evm_address": "0x25986b7f781f9672326912b5ea6a867e17bc7dc7",
       "wasm": "dispute_game_factory.wasm"
     },
     "evm_tx_router": {
-      "contract_id": "f91ff43778e97e1486a7e3826bea5616b139885dc77f23072b61c638b958be25",
-      "evm_address": "0xcae719dbb11858efbc14c96101025f2de9215546",
+      "contract_id": "fcc88d9c5d01119b4390a6661cc10ecfaeea083ec5c53f19ef97789ce3d90b9c",
+      "evm_address": "0x6c43f8323f713e107afcd6f686011cc4c1ba5cbb",
       "wasm": "evm_tx_router.wasm"
     },
     "fault_dispute_game_hub": {
-      "contract_id": "8b9e96b62b2e3df0f51a0fc1aba2b609dd7253feb90ab9f4d9b39a236c693f0d",
-      "evm_address": "0x411190ea09ed0250a367099c33da6603b67580c1",
+      "contract_id": "ccbc05a623e5106978526f06c8f107b32fc8cf1310c729abc96df5a719418e81",
+      "evm_address": "0xbee5a1877c4f4eabfd5845ff019f4c1319bcf820",
       "wasm": "fault_dispute_game_hub.wasm"
     },
     "l1_cross_domain_messenger": {
-      "contract_id": "f1b0c7ff422887e0542cd306288d22d7386358b7e10de3ed2df86a85ac189282",
-      "evm_address": "0x67bc75114dca08dc8a79c5af6d62e932ca47ee20",
+      "contract_id": "5020bc04059d3acc5e9513f8de17be6eb26e90ff1526140bcdb59c854727db52",
+      "evm_address": "0xa3c0050e5def7f7e498987d9eb504b7afa68d310",
       "wasm": "l1_cross_domain_messenger.wasm"
     },
     "l1_erc721_bridge": {
-      "contract_id": "06bc4e9807d9ba5ece03bf6821d6a6b87a65b97e0ef1563ea6179de6ed57b566",
-      "evm_address": "0xb14a26b61c2a5c26dc8903f0dadce2261033953b",
+      "contract_id": "d54436f3104e9732d781af6e6df2b3a56141da712e49d6f5163bab1aa046da87",
+      "evm_address": "0xa6dc273fba48972788728ccb796fcfdbada340b2",
       "wasm": "l1_erc721_bridge.wasm"
     },
     "l1_standard_bridge": {
-      "contract_id": "5decc945f0f275497215f810ef615e3570399a0fce25638cf049aef1c9b42d51",
-      "evm_address": "0x5f3cc68159beaab4aa3b68ba7a8328f688eaf257",
+      "contract_id": "8aa14ba30aef137961feda8ddca8a2df6ac107277de367f2c243bbcdf9d1bad0",
+      "evm_address": "0xa005033b28c9ed73bae86ccd8f0632de492abce2",
       "wasm": "l1_standard_bridge.wasm"
     },
     "mips": {
-      "contract_id": "6bf0f865bf79adbce7eb9a05f7304043e91f77fc29fc24051c6fa1102e4a06ba",
-      "evm_address": "0x3adaab1ca0e4abf7519b0c2dfa7673d25e5c14a8",
+      "contract_id": "bbeb2454f576ba9636f8e819e1cb8a7972c92167d1486c41b157fd2070e4d6ea",
+      "evm_address": "0x16c4cc26adfb0a94ea3be8eb8938bb9faa6d1763",
       "wasm": "mips.wasm"
     },
     "optimism_mintable_erc20_factory": {
-      "contract_id": "0d85d1bc930d33b65b6638dd1a1c57d97ba366ec3611a85f45896bebe5d281e6",
-      "evm_address": "0x31d1efedac38d8dc2d35f6415ca5533603f57f60",
+      "contract_id": "3ecbd02c5c64416a3faeca682dc2f03b90a1bae66529e483425456231e9f9f18",
+      "evm_address": "0xe19aa05421c8083bc1d2f4f2766980b183aaac06",
       "wasm": "optimism_mintable_erc20_factory.wasm"
     },
     "optimism_mintable_erc721_factory": {
-      "contract_id": "32557ce6b5d95dcda6a065c65f71629ccaefac672936db994e75d28ee5a8c3b2",
-      "evm_address": "0x0379d2d402fb1308a50a438058355de38d4069e7",
+      "contract_id": "4102d6bdc5e9e507bc88c3ea1d75f77b9c9c325901e7e0201aecd1758c246847",
+      "evm_address": "0xa0615e312896f1c9eca5cab80390944b1cf58d7f",
       "wasm": "optimism_mintable_erc721_factory.wasm"
     },
     "optimism_portal": {
-      "contract_id": "ed4ff37374bd49541ae04bf5e557e56ad41d47403b2dc0d0de61de87940b2ec7",
-      "evm_address": "0xb7d9a92aefca42993aeca24c4d2cfaba19bac82e",
+      "contract_id": "ff7418023b3cbbe2ab2d17e77a5490976ba50c6540c7786d837eaaa928f4f23e",
+      "evm_address": "0xff41ee54770a46215197b66427e2ac21861bbf2b",
       "wasm": "optimism_portal.wasm"
     },
     "permissioned_dispute_game_hub": {
-      "contract_id": "cacb142f24acf74ba59f2504bd59aba13ea700bf800466cb0c5b899cb6b460b8",
-      "evm_address": "0xd0798c2b0c48c3fa5cc92fee522f8b88dbaa3a43",
+      "contract_id": "24e315bd213a8e56b601f9a2127a463bbf8fdf3dd1e4d9e3dc27141a9381c4a8",
+      "evm_address": "0x937a8d8ca3c0c67e74111a26e610a68754948e9c",
       "wasm": "permissioned_dispute_game_hub.wasm"
     },
     "preimage_oracle": {
-      "contract_id": "4399ce1b14e3454f7ed52758903ad39bb09939576cebe32119eea3205c9d11c4",
-      "evm_address": "0xfaf2ac1e66968a4982bc34c545088328576d9474",
+      "contract_id": "622a33a0161d887711706c092b252fd1721ce6b06a0aaedceed172c5d45f717a",
+      "evm_address": "0x5352147585ff13445a290498933a4c2664350211",
       "wasm": "preimage_oracle.wasm"
     },
     "protocol_versions": {
-      "contract_id": "ba8eda9507de5e6354a1b72a3a2a2c9ac5a30ba5e17573fd614821f58f686509",
-      "evm_address": "0x752a98e5501155bb76e1c87972faa2d8421f29ea",
+      "contract_id": "d6cd83946e89c8f177d1d1d825f0520234b5a50f59650e68ddac5f86385e3eec",
+      "evm_address": "0x0ab61f37c6acc4e981b186b95e080b384b2bc6a2",
       "wasm": "protocol_versions.wasm"
     },
     "proxy_admin": {
-      "contract_id": "52de0dc8c41905f8772ff52073738112d19cb609b8e0a38ba34238721a64d632",
-      "evm_address": "0x3d24036b423e59e1bbfa3ed5c1d83e9f339d0c0e",
+      "contract_id": "b1191fa36ad0ad941c5128ce6b764abe92231b39d7803cef9d6bbfb437c9ea17",
+      "evm_address": "0x55246d1cc40f34319baadb32de7e435fdb804f60",
       "wasm": "proxy_admin.wasm"
     },
     "superchain_config": {
-      "contract_id": "2934cd75964fe1b1b74c3cbe4425dcc27327d06af5deda1e456e54bee3abb5fa",
-      "evm_address": "0x70712aeb9830e619f77f2d2503e677432e4e90b8",
+      "contract_id": "a3b58d5a98d9f3dc4eb9f1fb7135ad3d1d457045cbae8c0f1c90f83dc85ca284",
+      "evm_address": "0x967b6ad076e67ea681fbf22c1f68c6a7a9369ed0",
       "wasm": "superchain_config.wasm"
     },
     "system_config": {
-      "contract_id": "2a571c9a90f1a81e46b6e3a696abe2b49fc48bba6f5c87c8c011f69c750eecac",
-      "evm_address": "0x4368dfa9febfcdf30cac0d782737235302d525c5",
+      "contract_id": "a4cff9c23c50de6e9a415ad05f7146766235d987cb3292dabad5c19bc717a378",
+      "evm_address": "0xfe9c74878079984d2972946caef9ebc413dca553",
       "wasm": "transparent_proxy.wasm"
     },
     "system_config_impl": {
-      "contract_id": "b7e03ab26f33524994d14a096c0dbd984c11ea0e8b4c332dbd716b0bcc424930",
-      "evm_address": "0x5c7ad93e01209827e7d3eb022d3489de3ddcb61c",
+      "contract_id": "247f8700c759e6e4f65a07d001470d0cdee8d1013f26cb4af1400ee04e3766c9",
+      "evm_address": "0xa3e65e0df1fb0742d47521afc7fa74408e6cdeae",
       "wasm": "system_config_impl.wasm"
     },
     "system_config_legacy": {
-      "contract_id": "e880c0d68793a5517ba4dc73f294de62ee24f51a22681b5446be3991688ef6df",
-      "evm_address": "0x4368dfa9febfcdf30cac0d782737235302d525c5",
+      "contract_id": "0690ffc8258ccdadf12ccee87b718fb7d1855a522630fc262f567543e0a61335",
+      "evm_address": "0xfe9c74878079984d2972946caef9ebc413dca553",
       "wasm": "system_config.wasm"
     },
     "transparent_proxy": {
-      "contract_id": "2a571c9a90f1a81e46b6e3a696abe2b49fc48bba6f5c87c8c011f69c750eecac",
-      "evm_address": "0xfb4b109b4343ead40320af733392576a8b36c7ae",
+      "contract_id": "a4cff9c23c50de6e9a415ad05f7146766235d987cb3292dabad5c19bc717a378",
+      "evm_address": "0xdec73e523e0c965f539d99701985901cfd8b2cb2",
       "wasm": "transparent_proxy.wasm"
     },
     "tx_meta_registry": {
-      "contract_id": "d212faa24a515c8616f25f6651573c147cc13c30e441f0e5c98c25647c021c92",
-      "evm_address": "0x81f32f2be48d842dd91112bc28bccd76e069ce9c",
+      "contract_id": "38885da557d4c54cc8812d01217a90b0175cea0a243991322a068c40a7392dfa",
+      "evm_address": "0xf8ecf610bc058cf5fb2b0cc252fa177a44bedfb6",
       "wasm": "tx_meta_registry.wasm"
     }
   },
@@ -124,15 +124,15 @@
           "config_update"
         ],
         "implementation_artifact": "system_config_impl.wasm",
-        "implementation_contract_id": "b7e03ab26f33524994d14a096c0dbd984c11ea0e8b4c332dbd716b0bcc424930",
+        "implementation_contract_id": "247f8700c759e6e4f65a07d001470d0cdee8d1013f26cb4af1400ee04e3766c9",
         "implementation_contract_key": "system_config_impl",
         "implementation_version": 1,
-        "proxy_contract_id": "2a571c9a90f1a81e46b6e3a696abe2b49fc48bba6f5c87c8c011f69c750eecac",
+        "proxy_contract_id": "a4cff9c23c50de6e9a415ad05f7146766235d987cb3292dabad5c19bc717a378",
         "proxy_contract_key": "system_config",
         "proxy_event_schema_artifact": "transparent_proxy.wasm"
       }
     ],
-    "system_config_start_block": 436577
+    "system_config_start_block": 451475
   },
   "wallet_payer": "22YoXWsVJRtpPjqSJNP4csNTyu5XMuZrnxV3YksdTKFHLxGZeMN6xYoPdvCgKkaN2EeB3jDnvzaABtRieGHKKfnmBwk4BbqBPAZUVH5YrQdc1Jcq5XovYahXmifZT1VNUZTn"
 }
