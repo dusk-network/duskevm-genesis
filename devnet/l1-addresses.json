@@ -1,0 +1,138 @@
+{
+  "contracts": {
+    "anchor_state_registry": {
+      "contract_id": "792ea43e3a58bab24e50b442bafe6640482bb2177ffeb9c4779a77db2072869b",
+      "evm_address": "0x80be58a667ef538ee03c57378ae6a2bbb7abb2f8",
+      "wasm": "anchor_state_registry.wasm"
+    },
+    "delayed_weth": {
+      "contract_id": "953764b4b40b7451c0b797dca4a83068477474235489344fe17eb7376b90f5c8",
+      "evm_address": "0xcde1b22fbc65c36ecd159ec41f3e43d44e35b8ef",
+      "wasm": "delayed_weth.wasm"
+    },
+    "dispute_game_factory": {
+      "contract_id": "1da5630a16cda0a56c87d38fa71775aaef2e5596747e862af597622de5d0fc1c",
+      "evm_address": "0x25986b7f781f9672326912b5ea6a867e17bc7dc7",
+      "wasm": "dispute_game_factory.wasm"
+    },
+    "evm_tx_router": {
+      "contract_id": "fcc88d9c5d01119b4390a6661cc10ecfaeea083ec5c53f19ef97789ce3d90b9c",
+      "evm_address": "0x6c43f8323f713e107afcd6f686011cc4c1ba5cbb",
+      "wasm": "evm_tx_router.wasm"
+    },
+    "fault_dispute_game_hub": {
+      "contract_id": "ccbc05a623e5106978526f06c8f107b32fc8cf1310c729abc96df5a719418e81",
+      "evm_address": "0xbee5a1877c4f4eabfd5845ff019f4c1319bcf820",
+      "wasm": "fault_dispute_game_hub.wasm"
+    },
+    "l1_cross_domain_messenger": {
+      "contract_id": "5020bc04059d3acc5e9513f8de17be6eb26e90ff1526140bcdb59c854727db52",
+      "evm_address": "0xa3c0050e5def7f7e498987d9eb504b7afa68d310",
+      "wasm": "l1_cross_domain_messenger.wasm"
+    },
+    "l1_erc721_bridge": {
+      "contract_id": "d54436f3104e9732d781af6e6df2b3a56141da712e49d6f5163bab1aa046da87",
+      "evm_address": "0xa6dc273fba48972788728ccb796fcfdbada340b2",
+      "wasm": "l1_erc721_bridge.wasm"
+    },
+    "l1_standard_bridge": {
+      "contract_id": "8aa14ba30aef137961feda8ddca8a2df6ac107277de367f2c243bbcdf9d1bad0",
+      "evm_address": "0xa005033b28c9ed73bae86ccd8f0632de492abce2",
+      "wasm": "l1_standard_bridge.wasm"
+    },
+    "mips": {
+      "contract_id": "bbeb2454f576ba9636f8e819e1cb8a7972c92167d1486c41b157fd2070e4d6ea",
+      "evm_address": "0x16c4cc26adfb0a94ea3be8eb8938bb9faa6d1763",
+      "wasm": "mips.wasm"
+    },
+    "optimism_mintable_erc20_factory": {
+      "contract_id": "3ecbd02c5c64416a3faeca682dc2f03b90a1bae66529e483425456231e9f9f18",
+      "evm_address": "0xe19aa05421c8083bc1d2f4f2766980b183aaac06",
+      "wasm": "optimism_mintable_erc20_factory.wasm"
+    },
+    "optimism_mintable_erc721_factory": {
+      "contract_id": "4102d6bdc5e9e507bc88c3ea1d75f77b9c9c325901e7e0201aecd1758c246847",
+      "evm_address": "0xa0615e312896f1c9eca5cab80390944b1cf58d7f",
+      "wasm": "optimism_mintable_erc721_factory.wasm"
+    },
+    "optimism_portal": {
+      "contract_id": "ff7418023b3cbbe2ab2d17e77a5490976ba50c6540c7786d837eaaa928f4f23e",
+      "evm_address": "0xff41ee54770a46215197b66427e2ac21861bbf2b",
+      "wasm": "optimism_portal.wasm"
+    },
+    "permissioned_dispute_game_hub": {
+      "contract_id": "24e315bd213a8e56b601f9a2127a463bbf8fdf3dd1e4d9e3dc27141a9381c4a8",
+      "evm_address": "0x937a8d8ca3c0c67e74111a26e610a68754948e9c",
+      "wasm": "permissioned_dispute_game_hub.wasm"
+    },
+    "preimage_oracle": {
+      "contract_id": "622a33a0161d887711706c092b252fd1721ce6b06a0aaedceed172c5d45f717a",
+      "evm_address": "0x5352147585ff13445a290498933a4c2664350211",
+      "wasm": "preimage_oracle.wasm"
+    },
+    "protocol_versions": {
+      "contract_id": "d6cd83946e89c8f177d1d1d825f0520234b5a50f59650e68ddac5f86385e3eec",
+      "evm_address": "0x0ab61f37c6acc4e981b186b95e080b384b2bc6a2",
+      "wasm": "protocol_versions.wasm"
+    },
+    "proxy_admin": {
+      "contract_id": "b1191fa36ad0ad941c5128ce6b764abe92231b39d7803cef9d6bbfb437c9ea17",
+      "evm_address": "0x55246d1cc40f34319baadb32de7e435fdb804f60",
+      "wasm": "proxy_admin.wasm"
+    },
+    "superchain_config": {
+      "contract_id": "a3b58d5a98d9f3dc4eb9f1fb7135ad3d1d457045cbae8c0f1c90f83dc85ca284",
+      "evm_address": "0x967b6ad076e67ea681fbf22c1f68c6a7a9369ed0",
+      "wasm": "superchain_config.wasm"
+    },
+    "system_config": {
+      "contract_id": "a4cff9c23c50de6e9a415ad05f7146766235d987cb3292dabad5c19bc717a378",
+      "evm_address": "0xfe9c74878079984d2972946caef9ebc413dca553",
+      "wasm": "transparent_proxy.wasm"
+    },
+    "system_config_impl": {
+      "contract_id": "247f8700c759e6e4f65a07d001470d0cdee8d1013f26cb4af1400ee04e3766c9",
+      "evm_address": "0xa3e65e0df1fb0742d47521afc7fa74408e6cdeae",
+      "wasm": "system_config_impl.wasm"
+    },
+    "system_config_legacy": {
+      "contract_id": "0690ffc8258ccdadf12ccee87b718fb7d1855a522630fc262f567543e0a61335",
+      "evm_address": "0xfe9c74878079984d2972946caef9ebc413dca553",
+      "wasm": "system_config.wasm"
+    },
+    "transparent_proxy": {
+      "contract_id": "a4cff9c23c50de6e9a415ad05f7146766235d987cb3292dabad5c19bc717a378",
+      "evm_address": "0xdec73e523e0c965f539d99701985901cfd8b2cb2",
+      "wasm": "transparent_proxy.wasm"
+    },
+    "tx_meta_registry": {
+      "contract_id": "38885da557d4c54cc8812d01217a90b0175cea0a243991322a068c40a7392dfa",
+      "evm_address": "0xf8ecf610bc058cf5fb2b0cc252fa177a44bedfb6",
+      "wasm": "tx_meta_registry.wasm"
+    }
+  },
+  "metadata": {
+    "absolute_prestate": "0x03bb838f039a019830e1b73b7fcddd28aa212ff78104a574bc5833e677bdb331",
+    "fault_game": {
+      "game_type": 8,
+      "trace_type": "cannon-kona"
+    },
+    "proxy_forwarded_event_schemas": [
+      {
+        "forwarded_event_schema_artifact": "system_config.wasm",
+        "forwarded_event_topics": [
+          "config_update"
+        ],
+        "implementation_artifact": "system_config_impl.wasm",
+        "implementation_contract_id": "247f8700c759e6e4f65a07d001470d0cdee8d1013f26cb4af1400ee04e3766c9",
+        "implementation_contract_key": "system_config_impl",
+        "implementation_version": 1,
+        "proxy_contract_id": "a4cff9c23c50de6e9a415ad05f7146766235d987cb3292dabad5c19bc717a378",
+        "proxy_contract_key": "system_config",
+        "proxy_event_schema_artifact": "transparent_proxy.wasm"
+      }
+    ],
+    "system_config_start_block": 451475
+  },
+  "wallet_payer": "22YoXWsVJRtpPjqSJNP4csNTyu5XMuZrnxV3YksdTKFHLxGZeMN6xYoPdvCgKkaN2EeB3jDnvzaABtRieGHKKfnmBwk4BbqBPAZUVH5YrQdc1Jcq5XovYahXmifZT1VNUZTn"
+}
