@@ -1,0 +1,19 @@
+{
+  "config": {
+    "chainId": 3,
+    "londonBlock": 0,
+    "shanghaiTime": 0,
+    "cancunTime": 0,
+    "blobSchedule": {
+      "cancun": {
+        "target": 6,
+        "max": 6,
+        "baseFeeUpdateFraction": 3338477
+      }
+    }
+  },
+  "alloc": {},
+  "gasLimit": "0xB2D05E00",
+  "difficulty": "0x1",
+  "timestamp": "0x6911D744"
+}
