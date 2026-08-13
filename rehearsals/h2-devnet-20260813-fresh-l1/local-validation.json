@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-08-13T15:58:06+02:00",
+  "l1_block": "0x149",
+  "unsafe_l2": 274,
+  "safe_l2": 127,
+  "finalized_l2": 0,
+  "current_l1": 329,
+  "dispute_game_count": "0x0000000000000000000000000000000000000000000000000000000000000001",
+  "blob_l1_transaction": "0x8d7931a6c285ec347455d87cc61e30a0236bf3bcfd79c314f9374c84e2234ac1",
+  "blob_l1_inclusion_block": 309,
+  "proposer_l1_transaction": "0x5a81f7ea78ebd97be9751f67c29323489f0b94b18a7724538ee2d12efd95edf5",
+  "proposer_l1_inclusion_block": 316,
+  "l2_genesis_output_root": "0x54f494cd90d22c4e317dd828714df43c83e7999fda24c0efb68a0329f48cbcee"
+}

@@ -1,0 +1,54 @@
+# H2 Fresh-L1 Devnet Rehearsal
+
+This immutable artifact set replaces the obsolete H2 rehearsal after the
+underlying Dusk devnet was recreated. It is intended for the disposable H2
+Kubernetes rehearsal only and does not replace the public `devnet/` artifacts.
+
+- Dusk L1 chain ID: `3`
+- Dusk genesis hash: `a8874591964bcb8ac6dc1a7d427984e51d474b83e8db1afb47768e6f54480d7a`
+- DuskEVM L2 chain ID: `1310`
+- L1 origin block: `280`
+- Contracts tag: `testnet-2026-07-27`
+- Contracts commit: `a3302939506f35c89b1f012f250e59f904b869bb`
+- Adapter compatibility tag: `testnet-2026-07-27`
+- Adapter image: `ghcr.io/dusk-network/dusk-duskevm-adapter@sha256:7fde4423b3aedee186a93cb7b29d6dd2e7313403b2e5b5b485114c8a496d52dc`
+- Fault-proof game type: `8`
+- Fault-proof maximum depth: `73`
+- Fault-proof split depth: `30`
+- Game maximum clock: `302400` seconds
+- Game clock extension: `10800` seconds
+- Bond curve: OP Big Bonds, scaled to Dusk by `33333 LUX/gas`
+
+The genesis, rollup, L1 chain, address-book, and prestate files form one atomic
+deployment set. Do not mix them with another network or reuse an adapter,
+op-reth, op-node, challenger, or Blockscout data directory created from the
+previous H2 rehearsal.
+
+`SHA256SUMS` authenticates every generated file in this directory. The two
+origin-parent files bind adapter synchronization to the Dusk and projected
+Ethereum views of block `279`. `l2-genesis-output-root.txt` records the output
+root used to initialize the AnchorStateRegistry. This repository intentionally
+contains no wallet, seed, JWT, private key, or Kubernetes Secret.
+
+## Local validation
+
+The set was exercised from empty state against the fresh six-node Dusk devnet:
+
+- all 21 L1 contracts deployed and were wired successfully;
+- op-reth and op-node initialized from the generated files;
+- op-batcher published a blob in projected L1 block `309` and op-node derived
+  it to safe L2 block `127`;
+- the proposer created and confirmed a type-8 dispute game;
+- the final captured heads were unsafe `274`, safe `127`, and finalized `0`;
+- the DisputeGameFactory reported one game.
+
+The blob transaction was
+`0x8d7931a6c285ec347455d87cc61e30a0236bf3bcfd79c314f9374c84e2234ac1`.
+The proposer transaction was
+`0x5a81f7ea78ebd97be9751f67c29323489f0b94b18a7724538ee2d12efd95edf5`
+and was included in projected L1 block `316`. `local-validation.json` records
+the machine-readable result, including the L2 genesis output root.
+
+Fresh deployments must fund both operational fee paths: the adapter's Dusk
+relayer account for wrapper transactions and the proposer's EVM router credit
+for the type-8 game bond.
