@@ -1,0 +1,134 @@
+{
+  "contracts": {
+    "anchor_state_registry": {
+      "contract_id": "2deaf8e80993c122623c92ff1c75f7154ba192a2bc731d6fcd344c6b6cf45c9d",
+      "evm_address": "0x43fa28244f8c593dc16619d4344e6145c7f11822",
+      "wasm": "anchor_state_registry.wasm"
+    },
+    "delayed_weth": {
+      "contract_id": "193cfd2214f253fd1f794457934c203702447277c146a16b5bd6ecd2dc47ddcc",
+      "evm_address": "0xbe3d6f31a31b6ce366143c1e07ec35b7bc718ca9",
+      "wasm": "delayed_weth.wasm"
+    },
+    "dispute_game_factory": {
+      "contract_id": "7964fe7da5b25e42fbc6e04365c671efcda4781101a382ebd57d57c17f142beb",
+      "evm_address": "0xbcd155e61659b1c2ad08470708dfcca24f78d40e",
+      "wasm": "dispute_game_factory.wasm"
+    },
+    "evm_tx_router": {
+      "contract_id": "821441e4de96d85b49cb08c5fedcd65e855218a5049bce0b3ec639c61a881b0a",
+      "evm_address": "0xdb556f7505985ac99084c58dcc548703f27f6e34",
+      "wasm": "evm_tx_router.wasm"
+    },
+    "fault_dispute_game_hub": {
+      "contract_id": "a8286d54780ca991edc3719f6e7f494d7572d9d52bd1f81a8d88433fcb3a642c",
+      "evm_address": "0xc1b6bbc3afd51e72939eaacf858c7dea1adf65a9",
+      "wasm": "fault_dispute_game_hub.wasm"
+    },
+    "l1_cross_domain_messenger": {
+      "contract_id": "23dfa9d28491bebb27b62dfa7b50fd14c9d09ab369cbbaff1a61118a369b4ac0",
+      "evm_address": "0x12e0e21cbe2a49c1cf602892eb122cd2d99b805d",
+      "wasm": "l1_cross_domain_messenger.wasm"
+    },
+    "l1_erc721_bridge": {
+      "contract_id": "d402970b2b67cdd97d6393597ce1cb6d1eeec8b076009706fdf7c9eb71eaa9d8",
+      "evm_address": "0x7797bc74c1fd7c0455e6fb3030e2c9ffa6bc6e09",
+      "wasm": "l1_erc721_bridge.wasm"
+    },
+    "l1_standard_bridge": {
+      "contract_id": "d297c2b8ebe81c7dc5239070ae94ec3a5a0084936ac2790366a4a0644a8c0531",
+      "evm_address": "0x849c31a2c1d40c5cecbd54ffbce904bd36874c37",
+      "wasm": "l1_standard_bridge.wasm"
+    },
+    "mips": {
+      "contract_id": "9607c8e8e2fff3cd8982d46f7ba0ce48182bf1192d6d473d4a9a1ca8d954ecfe",
+      "evm_address": "0xe993e3846adab93aa30b975d21c60ba2190c7422",
+      "wasm": "mips.wasm"
+    },
+    "optimism_mintable_erc20_factory": {
+      "contract_id": "be5b339eaa3456a859ba0bdc7f156be0b006cbb88bbcd287759c158362f10240",
+      "evm_address": "0x8a42ca8c844d36a34e90b869a258c38ee388a92d",
+      "wasm": "optimism_mintable_erc20_factory.wasm"
+    },
+    "optimism_mintable_erc721_factory": {
+      "contract_id": "cabc9950d9ba641e596568a7d4e0a2b35738a5a606e51e2d65287cc974bde1ca",
+      "evm_address": "0x101ca571a932e9b498ee076bb29f2a09b6b05d7b",
+      "wasm": "optimism_mintable_erc721_factory.wasm"
+    },
+    "optimism_portal": {
+      "contract_id": "5ec2c3594b810086195179b64943b2bc7522b2ba96c438a801d877682c031c13",
+      "evm_address": "0xf97f9ac9e55630dc94e1ab732ec19e76b0d6379f",
+      "wasm": "optimism_portal.wasm"
+    },
+    "permissioned_dispute_game_hub": {
+      "contract_id": "e8ff3ced1218eb6717505ab039db40cfd2ddf8f8cef7de6109c772972951b2d1",
+      "evm_address": "0xe631116f7bb5eb7bf98354e44e2c1207d5dec46f",
+      "wasm": "permissioned_dispute_game_hub.wasm"
+    },
+    "preimage_oracle": {
+      "contract_id": "509fe1295abe30036ebf0732d3584e0a22d8aa3632e39a8c10a5e8f407d1c89f",
+      "evm_address": "0xf29ee491cb2e7766eb6263cbed40bc1acd75c188",
+      "wasm": "preimage_oracle.wasm"
+    },
+    "protocol_versions": {
+      "contract_id": "d61442bdd35d2c0db68830d1f6350abd3ce58ccc30802cb22ab6a4b70f5d5838",
+      "evm_address": "0x8106b273ef048b4103b489d8f78674420e4c60d1",
+      "wasm": "protocol_versions.wasm"
+    },
+    "proxy_admin": {
+      "contract_id": "a82b4b7d4709cdc3cd7077b7e25f51ebd2562095f58e689ebd79e85d485d9e66",
+      "evm_address": "0xc855ee1f6a91b697dc1d52d8709a5b0b06a501f9",
+      "wasm": "proxy_admin.wasm"
+    },
+    "superchain_config": {
+      "contract_id": "42646d05fa1e86f59a65d919b3c6b1ee9cebb6521fbb9eaaaacff39ec8ad9e70",
+      "evm_address": "0x770e579fa9928493c844b583413e8c893ced6a16",
+      "wasm": "superchain_config.wasm"
+    },
+    "system_config": {
+      "contract_id": "48b364e3ca9c769d23a4842beaf3542f2a5e4ae201732d46a004b9cffc0ed187",
+      "evm_address": "0xa964ff81d984604687bdd097244d7606b29e7796",
+      "wasm": "transparent_proxy.wasm"
+    },
+    "system_config_impl": {
+      "contract_id": "708f08aaf83cfa02238d116331098f8a3af81835c8bd66877490bbf17449b34c",
+      "evm_address": "0xa929bf8a2f6fee2ed62734046a892660d0ae5a9b",
+      "wasm": "system_config_impl.wasm"
+    },
+    "system_config_legacy": {
+      "contract_id": "13c3f86bfa4218b043c67d6d16a7baf3608c0d544f1b6512d368d9df70262017",
+      "evm_address": "0xa964ff81d984604687bdd097244d7606b29e7796",
+      "wasm": "system_config.wasm"
+    },
+    "transparent_proxy": {
+      "contract_id": "48b364e3ca9c769d23a4842beaf3542f2a5e4ae201732d46a004b9cffc0ed187",
+      "evm_address": "0x8c5a82b19318a1e0e93378b01add1f8998a7d3ba",
+      "wasm": "transparent_proxy.wasm"
+    },
+    "tx_meta_registry": {
+      "contract_id": "569215c6052d8216dc6f7425fce8296365106d58f346d21ca003e8072a13111c",
+      "evm_address": "0xd8018a168f95eb12a9ccc1a19288f1d67f5076dd",
+      "wasm": "tx_meta_registry.wasm"
+    }
+  },
+  "metadata": {
+    "absolute_prestate": "0x03a7916a0369eef183f2507863c1ab061fd94b27b24a56adc1302f5a19844a0f",
+    "proxy_forwarded_event_schemas": [
+      {
+        "forwarded_event_schema_artifact": "system_config.wasm",
+        "forwarded_event_topics": [
+          "config_update"
+        ],
+        "implementation_artifact": "system_config_impl.wasm",
+        "implementation_contract_id": "708f08aaf83cfa02238d116331098f8a3af81835c8bd66877490bbf17449b34c",
+        "implementation_contract_key": "system_config_impl",
+        "implementation_version": 1,
+        "proxy_contract_id": "48b364e3ca9c769d23a4842beaf3542f2a5e4ae201732d46a004b9cffc0ed187",
+        "proxy_contract_key": "system_config",
+        "proxy_event_schema_artifact": "transparent_proxy.wasm"
+      }
+    ],
+    "system_config_start_block": 280
+  },
+  "wallet_payer": "22YoXWsVJRtpPjqSJNP4csNTyu5XMuZrnxV3YksdTKFHLxGZeMN6xYoPdvCgKkaN2EeB3jDnvzaABtRieGHKKfnmBwk4BbqBPAZUVH5YrQdc1Jcq5XovYahXmifZT1VNUZTn"
+}
