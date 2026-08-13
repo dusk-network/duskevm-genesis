@@ -49,6 +49,12 @@ The proposer transaction was
 and was included in projected L1 block `316`. `local-validation.json` records
 the machine-readable result, including the L2 genesis output root.
 
+Before the H2 rollout, both independently rebuilt adapters repeatedly resolved
+origin block `280` to canonical projected hash
+`0x1d3832b95282c9d11e10954fb6cb644f034b4050017ea9fe63e5445857147a2c`.
+The rollup origin was corrected from the transient hash captured during the
+ceremony; no other generated artifact depends on that projected block hash.
+
 Fresh deployments must fund both operational fee paths: the adapter's Dusk
 relayer account for wrapper transactions and the proposer's EVM router credit
 for the type-8 game bond.
