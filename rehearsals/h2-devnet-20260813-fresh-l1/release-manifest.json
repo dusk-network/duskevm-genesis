@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "kind": "rehearsal",
+  "network": {
+    "name": "h2-devnet-20260813-fresh-l1",
+    "dusk": {
+      "chainId": 3,
+      "genesisHash": "a8874591964bcb8ac6dc1a7d427984e51d474b83e8db1afb47768e6f54480d7a",
+      "activationHeights": {
+        "blobCall": null,
+        "nativeCurves": null
+      }
+    },
+    "l2": {
+      "chainId": 1310,
+      "genesisTime": 1786628924
+    },
+    "origin": {
+      "block": 280,
+      "parentDuskHash": "c0afd5e296ca8da11a90d6963b7b04c2ed0a3abf6dd30c838692de3e7accc140",
+      "parentEthHash": "0x7cf505f6cf629d334bd314e9b26ac8dd14ebddfc44d846ed39295622ea82de42"
+    }
+  },
+  "stage0": {
+    "settlement": "permissioned-respected-game",
+    "gameType": 8,
+    "executionProfile": "testnet-2026-07-27-compatibility",
+    "calldataLimits": null
+  },
+  "components": {
+    "contracts": {
+      "sourceRevision": "a3302939506f35c89b1f012f250e59f904b869bb",
+      "releaseTag": "testnet-2026-07-27",
+      "image": null
+    },
+    "adapter": {
+      "sourceRevision": null,
+      "releaseTag": "testnet-2026-07-27-plus-op-compatibility",
+      "image": "ghcr.io/dusk-network/dusk-duskevm-adapter@sha256:7fde4423b3aedee186a93cb7b29d6dd2e7313403b2e5b5b485114c8a496d52dc"
+    },
+    "rusk": {
+      "sourceRevision": null,
+      "releaseTag": null,
+      "image": null
+    },
+    "piecrust": {
+      "sourceRevision": null,
+      "releaseTag": null,
+      "image": null
+    },
+    "opReth": {
+      "sourceRevision": null,
+      "releaseTag": null,
+      "image": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-reth@sha256:4bc077fc2068b537ec0bffb86fca027b30cac9a0b02dbfdece2363f1c1bbc861"
+    },
+    "opNode": {
+      "sourceRevision": null,
+      "releaseTag": null,
+      "image": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node@sha256:2254e2a715cff6a937dbbfe1b44b8dc23c464f8b0cac60e4013b30a202fcb72e"
+    },
+    "opBatcher": {
+      "sourceRevision": null,
+      "releaseTag": null,
+      "image": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-batcher@sha256:af95492b091d0d7759074d8866a0c0daa5227cfdcc1520efc5e3d3ec9934af48"
+    },
+    "opProposer": {
+      "sourceRevision": null,
+      "releaseTag": null,
+      "image": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-proposer@sha256:31b21fae8941245b5f47c42c0e6aff19fb4ccee4a42dbb72b4cf02f245d87836"
+    },
+    "opChallenger": {
+      "sourceRevision": null,
+      "releaseTag": null,
+      "image": "ghcr.io/dusk-network/duskevm-op-challenger@sha256:6196d77f8c1d089cae531a5c763f7e90c63b0737cfcf84f0eb7bc864637f21b6"
+    },
+    "blockscoutBackend": {
+      "sourceRevision": null,
+      "releaseTag": "11.2.2-dusk.1",
+      "image": "ghcr.io/dusk-network/duskevm-explorer-backend@sha256:a564dd2ae7eb6ec5486f64e0bbf274cda523ec0b5e05b0678a60222aa90c9c1c"
+    },
+    "blockscoutFrontend": {
+      "sourceRevision": null,
+      "releaseTag": "2.9.4-dusk.1",
+      "image": "ghcr.io/dusk-network/duskevm-explorer-frontend@sha256:c5baef8c66863b306a2ba658c160fd0e91a711906c157ecdcccc629e4971a3cf"
+    }
+  },
+  "charts": {
+    "adapter": "0.1.0",
+    "aggregate": "0.0.37",
+    "blockscout": "0.1.18",
+    "postgresql": "16.3.5",
+    "challenger": null
+  },
+  "artifacts": {
+    "genesis.json": "af31b5b4c50506b8931e2d74c64795dc78f0f2fdd59798eeae68e4959814e7cd",
+    "l1-addresses.json": "4eb68cf49cf1a17acc5e9d4847043839e2205f98f93194411c9434f94d0a2329",
+    "l1-genesis.json": "ad532475cbacd1d617f3e91b0df534bfc0f4934f248db75294a1e467bc8bfb72",
+    "l2-genesis-output-root.txt": "5b0b783dbc735f9fa3555250429f7dd97293ae46a71b386ce59c2a72dfa6a111",
+    "local-validation.json": "6f9e2ae8d7c8d869c81c1d1e5e39b63e7ce97f3cea06f1a487647a1f2df7671e",
+    "origin-parent-dusk-hash.txt": "e7bbe7fb86d4ddde45768643caaf6ad56f9df08f70aa1175cdcc721c7e642837",
+    "origin-parent-eth-hash.txt": "c1c0a245f33b7ab5b4b8e8cbc3b09a0faeac9a4963244bf540afa7b4b7d3c845",
+    "prestate-proof.json": "35008fc1361d03ba9f30a31ea3aeaba1071350a5f7d0851faf92b6f9085d0e4d",
+    "prestate.bin.gz": "8b64ee56eda2461609f0996b1f0916b4aba5ba48a0b76012a3fe8336b14abbae",
+    "rollup.json": "807a0947a0c75844d181686844ef2736f1a2392332142d37f6d2be2a27cbebff"
+  },
+  "attestations": {
+    "localValidation": "local-validation.json",
+    "notes": "This records the deployed H2 rehearsal boundary. Missing source revisions and activation heights make it intentionally ineligible as a release candidate."
+  }
+}

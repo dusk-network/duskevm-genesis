@@ -1,9 +1,9 @@
-# DuskEVM Genesis
+# DuskEVM deployment bundles
 
 This repository contains the public deployment artifacts for the DuskEVM
 networks:
 
-- Mainnet: production configuration (WIP)
+- Mainnet: generated only from an approved immutable release candidate
 - Testnet: public testing environment (WIP)
 - Devnet: testing environment
 
@@ -21,3 +21,30 @@ set.
 Treat all files in a complete network directory as an atomic set. Reusing an
 op-reth or adapter database with artifacts from another set is unsupported and
 should fail startup policy checks.
+
+## Release manifest
+
+Every new rehearsal or release bundle must include `release-manifest.json`.
+It binds the network identity, activation heights, Stage 0 execution profile,
+source revisions, immutable images, chart versions, artifact digests and local
+validation evidence. The schema is documented in
+`release-manifest.schema.json`.
+
+Validate a bundle with:
+
+```sh
+python3 tools/validate_release_bundle.py path/to/bundle
+```
+
+Bundles marked `release-candidate` or `release` are checked more strictly than
+historical rehearsals. They must pin the contracts, adapter, Rusk and Piecrust
+source revisions, record BlobCall/native-curve activation heights, use the
+`constrained-v1` profile and declare all three Stage 0 calldata ceilings.
+
+The validator also checks artifact hashes and cross-file invariants: chain IDs,
+genesis time, L1 origin, `SystemConfig.startBlock()`, origin-parent hashes,
+absolute prestate and the attested L2 genesis output root.
+
+`release-manifest.json` contains no secret values. Relayer, proposer,
+challenger, Engine JWT and database credentials remain in the deployment
+environment's secret manager or Kubernetes Secrets.
