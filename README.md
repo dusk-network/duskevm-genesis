@@ -43,7 +43,11 @@ source revisions, record BlobCall/native-curve activation heights, use the
 
 The validator also checks artifact hashes and cross-file invariants: chain IDs,
 genesis time, L1 origin, `SystemConfig.startBlock()`, origin-parent hashes,
-absolute prestate and the attested L2 genesis output root.
+the projected origin and L2 genesis hashes, OP contract addresses, absolute
+prestate and the attested L2 genesis output root. Release candidates must also
+use the exact chart versions in the validator's reviewed Stage 0 compatibility
+matrix; a chart version is part of the release contract, not a deployment-time
+choice.
 
 `release-manifest.json` contains no secret values. Relayer, proposer,
 challenger, Engine JWT and database credentials remain in the deployment

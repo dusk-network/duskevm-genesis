@@ -41,6 +41,12 @@ REQUIRED_COMPONENTS = {
     "blockscoutFrontend",
 }
 SOURCE_PINNED_COMPONENTS = {"contracts", "adapter", "rusk", "piecrust"}
+RELEASE_CHART_COMPATIBILITY = {
+    "adapter": {"0.1.3"},
+    "aggregate": {"0.0.39"},
+    "blockscout": {"0.1.18"},
+    "postgresql": {"16.3.5"},
+}
 
 
 class BundleError(ValueError):
@@ -128,6 +134,14 @@ def validate_bundle(bundle_dir: Path, strict_release: bool = False) -> list[str]
         nested(manifest, "network", "origin", "parentEthHash"),
         "network.origin.parentEthHash",
     )
+    projected_origin_eth = require_hash(
+        nested(manifest, "network", "origin", "projectedEthHash"),
+        "network.origin.projectedEthHash",
+    )
+    l2_genesis_hash = require_hash(
+        nested(manifest, "network", "l2", "genesisHash"),
+        "network.l2.genesisHash",
+    )
 
     stage0 = nested(manifest, "stage0")
     if stage0.get("settlement") != "permissioned-respected-game":
@@ -181,6 +195,14 @@ def validate_bundle(bundle_dir: Path, strict_release: bool = False) -> list[str]
         raise BundleError("l1-genesis.json chain ID differs from release manifest")
     if nested(rollup, "genesis", "l1", "number") != origin_block:
         raise BundleError("rollup origin block differs from release manifest")
+    if normalize_hash(nested(rollup, "genesis", "l1", "hash")) != normalize_hash(
+        projected_origin_eth
+    ):
+        raise BundleError("rollup origin hash differs from release manifest")
+    if normalize_hash(nested(rollup, "genesis", "l2", "hash")) != normalize_hash(
+        l2_genesis_hash
+    ):
+        raise BundleError("rollup L2 genesis hash differs from release manifest")
     if nested(addresses, "metadata", "system_config_start_block") != origin_block:
         raise BundleError("SystemConfig start block differs from release manifest")
     if nested(rollup, "genesis", "l2_time") != genesis_time:
@@ -199,14 +221,37 @@ def validate_bundle(bundle_dir: Path, strict_release: bool = False) -> list[str]
     require_hash(output_root, "l2-genesis-output-root.txt")
     if validation.get("l2_genesis_output_root") != output_root:
         raise BundleError("local validation attests a different L2 genesis output root")
+    if normalize_hash(validation.get("l2_genesis_hash", "")) != normalize_hash(l2_genesis_hash):
+        raise BundleError("local validation attests a different L2 genesis block hash")
     if nested(addresses, "metadata", "absolute_prestate") != prestate.get("pre"):
         raise BundleError("address book and prestate proof use different absolute prestates")
+
+    address_checks = {
+        "deposit_contract_address": "optimism_portal",
+        "l1_system_config_address": "system_config",
+        "protocol_versions_address": "protocol_versions",
+    }
+    for rollup_field, contract_name in address_checks.items():
+        configured = rollup.get(rollup_field)
+        deployed = nested(addresses, "contracts", contract_name, "evm_address")
+        if not isinstance(configured, str) or configured.lower() != str(deployed).lower():
+            raise BundleError(
+                f"rollup {rollup_field} differs from address book {contract_name}"
+            )
 
     attestation = nested(manifest, "attestations", "localValidation")
     if attestation != "local-validation.json":
         raise BundleError("attestations.localValidation must reference local-validation.json")
 
     if strict:
+        charts = nested(manifest, "charts")
+        for chart, supported_versions in RELEASE_CHART_COMPATIBILITY.items():
+            version = charts.get(chart)
+            if version not in supported_versions:
+                supported = ", ".join(sorted(supported_versions))
+                raise BundleError(
+                    f"release candidate requires compatible {chart} chart ({supported}); got {version!r}"
+                )
         for component_name in SOURCE_PINNED_COMPONENTS:
             revision = components[component_name].get("sourceRevision")
             if not isinstance(revision, str) or not REVISION.fullmatch(revision):
@@ -230,6 +275,12 @@ def validate_bundle(bundle_dir: Path, strict_release: bool = False) -> list[str]
         ):
             require_positive_int(limits.get(name), f"stage0.calldataLimits.{name}")
     else:
+        charts = nested(manifest, "charts")
+        for chart, supported_versions in RELEASE_CHART_COMPATIBILITY.items():
+            if charts.get(chart) not in supported_versions:
+                warnings.append(
+                    f"rehearsal uses {chart} chart {charts.get(chart)!r}, outside the Stage 0 release matrix"
+                )
         for component_name in SOURCE_PINNED_COMPONENTS:
             if components[component_name].get("sourceRevision") is None:
                 warnings.append(f"rehearsal did not record {component_name} source revision")

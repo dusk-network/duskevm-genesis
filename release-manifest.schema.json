@@ -40,19 +40,21 @@
         },
         "l2": {
           "type": "object",
-          "required": ["chainId", "genesisTime"],
+          "required": ["chainId", "genesisTime", "genesisHash"],
           "properties": {
             "chainId": { "type": "integer", "minimum": 1 },
-            "genesisTime": { "type": "integer", "minimum": 1 }
+            "genesisTime": { "type": "integer", "minimum": 1 },
+            "genesisHash": { "$ref": "#/$defs/hash" }
           }
         },
         "origin": {
           "type": "object",
-          "required": ["block", "parentDuskHash", "parentEthHash"],
+          "required": ["block", "parentDuskHash", "parentEthHash", "projectedEthHash"],
           "properties": {
             "block": { "type": "integer", "minimum": 1 },
             "parentDuskHash": { "$ref": "#/$defs/hash" },
-            "parentEthHash": { "$ref": "#/$defs/hash" }
+            "parentEthHash": { "$ref": "#/$defs/hash" },
+            "projectedEthHash": { "$ref": "#/$defs/hash" }
           }
         }
       }
@@ -95,7 +97,15 @@
     },
     "charts": {
       "type": "object",
-      "additionalProperties": { "type": ["string", "null"] }
+      "required": ["adapter", "aggregate", "blockscout", "postgresql"],
+      "properties": {
+        "adapter": { "type": "string", "minLength": 1 },
+        "aggregate": { "type": "string", "minLength": 1 },
+        "blockscout": { "type": "string", "minLength": 1 },
+        "postgresql": { "type": "string", "minLength": 1 },
+        "challenger": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
     },
     "artifacts": {
       "type": "object",
