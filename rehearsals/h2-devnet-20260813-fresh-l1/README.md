@@ -8,6 +8,7 @@ Kubernetes rehearsal only and does not replace the public `devnet/` artifacts.
 - Dusk genesis hash: `a8874591964bcb8ac6dc1a7d427984e51d474b83e8db1afb47768e6f54480d7a`
 - DuskEVM L2 chain ID: `1310`
 - L1 origin block: `280`
+- Sequencing window: `4000` L1 blocks (devnet recovery allowance)
 - Contracts tag: `testnet-2026-07-27`
 - Contracts commit: `a3302939506f35c89b1f012f250e59f904b869bb`
 - Adapter compatibility tag: `testnet-2026-07-27`
@@ -23,6 +24,12 @@ The genesis, rollup, L1 chain, address-book, and prestate files form one atomic
 deployment set. Do not mix them with another network or reuse an adapter,
 op-reth, op-node, challenger, or Blockscout data directory created from the
 previous H2 rehearsal.
+
+The sequencing window is intentionally 400 blocks wider than the original
+deployment. The H2 operator lost its unsafe chain after an outage longer than
+the original 3,600-block window; the extra margin lets the first recovery
+channel land without resetting the otherwise canonical L2 history. This is a
+disposable devnet recovery setting, not a mainnet recommendation.
 
 `SHA256SUMS` authenticates every generated file in this directory. The two
 origin-parent files bind adapter synchronization to the Dusk and projected
