@@ -22,7 +22,7 @@
   },
   "block_time": 2,
   "max_sequencer_drift": 600,
-  "seq_window_size": 3600,
+  "seq_window_size": 4000,
   "channel_timeout": 300,
   "l1_chain_id": 3,
   "l2_chain_id": 1310,
