@@ -57,6 +57,40 @@ class ReleaseBundleValidationTest(unittest.TestCase):
             with self.assertRaisesRegex(BundleError, "source revision"):
                 validate_bundle(bundle, strict_release=True)
 
+    def test_release_candidate_requires_consume_gas_activation(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            bundle = Path(directory) / "bundle"
+            shutil.copytree(FIXTURE, bundle)
+            manifest_path = bundle / "release-manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["charts"].update(
+                {
+                    "adapter": "0.1.3",
+                    "aggregate": "0.0.39",
+                    "blockscout": "0.1.18",
+                    "postgresql": "16.3.5",
+                }
+            )
+            for component in ("contracts", "adapter", "rusk", "piecrust"):
+                manifest["components"][component]["sourceRevision"] = "1" * 40
+            manifest["network"]["dusk"]["activationHeights"].update(
+                {"blobCall": 1, "nativeCurves": 1}
+            )
+            manifest["stage0"]["executionProfile"] = "constrained-v1"
+            manifest["stage0"]["calldataLimits"] = {
+                "bn254PairingBytes": 112_704,
+                "bls12381G1MultiExpBytes": 156_672,
+                "bls12381G2MultiExpBytes": 307_456,
+            }
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+
+            with self.assertRaisesRegex(BundleError, "activationHeights.consumeGas"):
+                validate_bundle(bundle, strict_release=True)
+
+            manifest["network"]["dusk"]["activationHeights"]["consumeGas"] = 1
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+            validate_bundle(bundle, strict_release=True)
+
     def test_cross_file_origin_drift_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             bundle = Path(directory) / "bundle"

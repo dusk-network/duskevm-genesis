@@ -8,7 +8,8 @@
       "genesisHash": "a8874591964bcb8ac6dc1a7d427984e51d474b83e8db1afb47768e6f54480d7a",
       "activationHeights": {
         "blobCall": null,
-        "nativeCurves": null
+        "nativeCurves": null,
+        "consumeGas": null
       }
     },
     "l2": {

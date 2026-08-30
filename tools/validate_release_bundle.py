@@ -263,6 +263,9 @@ def validate_bundle(bundle_dir: Path, strict_release: bool = False) -> list[str]
         require_positive_int(
             activations.get("nativeCurves"), "activationHeights.nativeCurves", allow_zero=True
         )
+        require_positive_int(
+            activations.get("consumeGas"), "activationHeights.consumeGas", allow_zero=True
+        )
         if stage0.get("executionProfile") != "constrained-v1":
             raise BundleError("release candidate must use executionProfile constrained-v1")
         limits = stage0.get("calldataLimits")

@@ -38,8 +38,9 @@ python3 tools/validate_release_bundle.py path/to/bundle
 
 Bundles marked `release-candidate` or `release` are checked more strictly than
 historical rehearsals. They must pin the contracts, adapter, Rusk and Piecrust
-source revisions, record BlobCall/native-curve activation heights, use the
-`constrained-v1` profile and declare all three Stage 0 calldata ceilings.
+source revisions, record BlobCall, native-curve and explicit-gas-consumption
+activation heights, use the `constrained-v1` profile and declare all three
+Stage 0 calldata ceilings.
 
 The validator also checks artifact hashes and cross-file invariants: chain IDs,
 genesis time, L1 origin, `SystemConfig.startBlock()`, origin-parent hashes,
