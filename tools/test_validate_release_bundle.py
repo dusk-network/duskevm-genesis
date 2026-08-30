@@ -48,7 +48,7 @@ class ReleaseBundleValidationTest(unittest.TestCase):
             manifest["charts"].update(
                 {
                     "adapter": "0.1.3",
-                    "aggregate": "0.0.39",
+                    "aggregate": "0.0.40",
                     "blockscout": "0.1.18",
                     "postgresql": "16.3.5",
                 }
@@ -66,7 +66,7 @@ class ReleaseBundleValidationTest(unittest.TestCase):
             manifest["charts"].update(
                 {
                     "adapter": "0.1.3",
-                    "aggregate": "0.0.39",
+                    "aggregate": "0.0.40",
                     "blockscout": "0.1.18",
                     "postgresql": "16.3.5",
                 }

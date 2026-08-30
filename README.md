@@ -48,7 +48,8 @@ the projected origin and L2 genesis hashes, OP contract addresses, absolute
 prestate and the attested L2 genesis output root. Release candidates must also
 use the exact chart versions in the validator's reviewed Stage 0 compatibility
 matrix; a chart version is part of the release contract, not a deployment-time
-choice.
+choice. Aggregate chart `0.0.40` is the first candidate that includes durable
+trusted peering between the operator and validator execution engines.
 
 `release-manifest.json` contains no secret values. Relayer, proposer,
 challenger, Engine JWT and database credentials remain in the deployment
