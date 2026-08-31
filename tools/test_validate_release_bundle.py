@@ -47,7 +47,7 @@ class ReleaseBundleValidationTest(unittest.TestCase):
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             manifest["charts"].update(
                 {
-                    "adapter": "0.1.3",
+                    "adapter": "0.1.4",
                     "aggregate": "0.0.40",
                     "blockscout": "0.1.18",
                     "postgresql": "16.3.5",
@@ -65,7 +65,7 @@ class ReleaseBundleValidationTest(unittest.TestCase):
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             manifest["charts"].update(
                 {
-                    "adapter": "0.1.3",
+                    "adapter": "0.1.4",
                     "aggregate": "0.0.40",
                     "blockscout": "0.1.18",
                     "postgresql": "16.3.5",

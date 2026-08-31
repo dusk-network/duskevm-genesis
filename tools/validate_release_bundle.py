@@ -42,7 +42,7 @@ REQUIRED_COMPONENTS = {
 }
 SOURCE_PINNED_COMPONENTS = {"contracts", "adapter", "rusk", "piecrust"}
 RELEASE_CHART_COMPATIBILITY = {
-    "adapter": {"0.1.3"},
+    "adapter": {"0.1.4"},
     "aggregate": {"0.0.40"},
     "blockscout": {"0.1.18"},
     "postgresql": {"16.3.5"},
