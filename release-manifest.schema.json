@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dusk-network/duskevm-genesis/release-manifest.schema.json",
+  "title": "DuskEVM deployment bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "kind",
+    "network",
+    "stage0",
+    "components",
+    "charts",
+    "artifacts",
+    "attestations"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "enum": ["rehearsal", "release-candidate", "release"] },
+    "network": {
+      "type": "object",
+      "required": ["name", "dusk", "l2", "origin"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "dusk": {
+          "type": "object",
+          "required": ["chainId", "genesisHash", "activationHeights"],
+          "properties": {
+            "chainId": { "type": "integer", "minimum": 1 },
+            "genesisHash": { "$ref": "#/$defs/hash" },
+            "activationHeights": {
+              "type": "object",
+              "required": ["blobCall", "nativeCurves", "consumeGas"],
+              "properties": {
+                "blobCall": { "type": ["integer", "null"], "minimum": 0 },
+                "nativeCurves": { "type": ["integer", "null"], "minimum": 0 },
+                "consumeGas": { "type": ["integer", "null"], "minimum": 0 }
+              }
+            }
+          }
+        },
+        "l2": {
+          "type": "object",
+          "required": ["chainId", "genesisTime", "genesisHash"],
+          "properties": {
+            "chainId": { "type": "integer", "minimum": 1 },
+            "genesisTime": { "type": "integer", "minimum": 1 },
+            "genesisHash": { "$ref": "#/$defs/hash" }
+          }
+        },
+        "origin": {
+          "type": "object",
+          "required": ["block", "parentDuskHash", "parentEthHash", "projectedEthHash"],
+          "properties": {
+            "block": { "type": "integer", "minimum": 1 },
+            "parentDuskHash": { "$ref": "#/$defs/hash" },
+            "parentEthHash": { "$ref": "#/$defs/hash" },
+            "projectedEthHash": { "$ref": "#/$defs/hash" }
+          }
+        }
+      }
+    },
+    "stage0": {
+      "type": "object",
+      "required": ["settlement", "gameType", "executionProfile", "calldataLimits"],
+      "properties": {
+        "settlement": { "const": "permissioned-respected-game" },
+        "gameType": { "const": 8 },
+        "executionProfile": { "type": "string", "minLength": 1 },
+        "calldataLimits": {
+          "type": ["object", "null"],
+          "properties": {
+            "bn254PairingBytes": { "type": "integer", "minimum": 1 },
+            "bls12381G1MultiExpBytes": { "type": "integer", "minimum": 1 },
+            "bls12381G2MultiExpBytes": { "type": "integer", "minimum": 1 }
+          },
+          "required": [
+            "bn254PairingBytes",
+            "bls12381G1MultiExpBytes",
+            "bls12381G2MultiExpBytes"
+          ]
+        }
+      }
+    },
+    "components": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "sourceRevision": {
+            "type": ["string", "null"],
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "releaseTag": { "type": ["string", "null"] },
+          "image": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "charts": {
+      "type": "object",
+      "required": ["adapter", "aggregate", "blockscout", "postgresql"],
+      "properties": {
+        "adapter": { "type": "string", "minLength": 1 },
+        "aggregate": { "type": "string", "minLength": 1 },
+        "blockscout": { "type": "string", "minLength": 1 },
+        "postgresql": { "type": "string", "minLength": 1 },
+        "challenger": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/digest" }
+    },
+    "attestations": {
+      "type": "object",
+      "required": ["localValidation"],
+      "properties": {
+        "localValidation": { "type": "string", "minLength": 1 },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^(0x)?[0-9a-f]{64}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

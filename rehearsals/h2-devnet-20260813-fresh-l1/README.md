@@ -31,6 +31,13 @@ the original 3,600-block window; the extra margin lets the first recovery
 channel land without resetting the otherwise canonical L2 history. This is a
 disposable devnet recovery setting, not a mainnet recommendation.
 
+`release-manifest.json` records the exact immutable images and chart versions
+observed on H2 and binds them to this artifact set. It also records which
+source revisions and activation heights were not captured by this historical
+rehearsal. Those omissions deliberately prevent this bundle from passing the
+stricter release-candidate validation; this remains rehearsal evidence, not a
+mainnet candidate.
+
 `SHA256SUMS` authenticates every generated file in this directory. The two
 origin-parent files bind adapter synchronization to the Dusk and projected
 Ethereum views of block `279`. `l2-genesis-output-root.txt` records the output

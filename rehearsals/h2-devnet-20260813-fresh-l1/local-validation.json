@@ -10,5 +10,6 @@
   "blob_l1_inclusion_block": 309,
   "proposer_l1_transaction": "0x5a81f7ea78ebd97be9751f67c29323489f0b94b18a7724538ee2d12efd95edf5",
   "proposer_l1_inclusion_block": 316,
+  "l2_genesis_hash": "0x46ca171fb1b843483228508511261314dd9cc135ea8d73867795bdd920ca9ee6",
   "l2_genesis_output_root": "0x54f494cd90d22c4e317dd828714df43c83e7999fda24c0efb68a0329f48cbcee"
 }
